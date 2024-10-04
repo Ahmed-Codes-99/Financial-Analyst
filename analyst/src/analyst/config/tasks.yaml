@@ -1,0 +1,39 @@
+data_summary_task:
+  description: >
+    Summarize data by vendor and sub-account for each identified account.
+    Ensure the summary is concise and clear, organized by vendor and sub-account.
+  expected_output: >
+    A summary of data, grouped by vendor and sub-account for each account.
+  
+
+data_validation_task:
+  description: >
+    Validate the summarized data against the original dataset, allowing up to 3 rounds of validation.
+    Ensure any discrepancies are resolved, with a maximum of 3 iterations for validation.
+  expected_output: >
+    A validated dataset with any corrections made after up to 3 validation rounds.
+
+
+comparison_task:
+  description: >
+    Revalidate the data by comparing the current results with historical data stored in a vector database.
+    Highlight any trends or discrepancies found between the current and historical data.
+  expected_output: >
+    A comparison report showing consistency, trends, and any discrepancies between current and historical data.
+
+
+executive_format_task:
+  description: >
+    Format the validated and revalidated data into a clear, concise message for final reporting.
+    Ensure the message is structured appropriately for decision-making purposes.
+  expected_output: >
+    A formatted report ready for executive review, summarizing the verified data.
+
+
+stakeholder_messaging_task:
+  description: >
+    Present the final, validated message to relevant stakeholders, ensuring all data is accurate and verified.
+    Ensure the report is tailored for the specific stakeholders of each account.
+  expected_output: >
+    A final message presented to stakeholders, ensuring all data is accurate and verified.
+

@@ -1,0 +1,25 @@
+Accounts,Date,Transaction Type,Num,Memo/Description,Amount,Balance,GroupAccount,Vendor,Debit,Credit,Month,Year,Type
+   1050 - Enterprise B&T Disbursement Account (x1161),2024-01-02,Bill Payment (Check),,Acct 35101 - Inv 2027430,-135,547642,1000 - Cash & Cash Equivalents:1050 - Enterprise B&T Disbursement Account (x1161),Kirton,,135,1,2024,MSO
+   1050 - Enterprise B&T Disbursement Account (x1161),2024-01-02,Bill Payment (Check),,Inv PhoneSetup,-900,546742,1000 - Cash & Cash Equivalents:1050 - Enterprise B&T Disbursement Account (x1161),Sheharyar,,900,1,2024,MSO
+   1050 - Enterprise B&T Disbursement Account (x1161),2024-01-02,Bill Payment (Check),,Acct DFW  Neuro - Multiple invoices,-5854,540888,1000 - Cash & Cash Equivalents:1050 - Enterprise B&T Disbursement Account (x1161),Venturenet,,"5,854.18",1,2024,MSO
+   1050 - Enterprise B&T Disbursement Account (x1161),2024-01-02,Bill Payment (Check),,Inv 26708,-520,540369,1000 - Cash & Cash Equivalents:1050 - Enterprise B&T Disbursement Account (x1161),Priority,,519.6,1,2024,MSO
+   1050 - Enterprise B&T Disbursement Account (x1161),2024-01-02,Bill Payment (Check),,Multiple invoices,-713,539655,1000 - Cash & Cash Equivalents:1050 - Enterprise B&T Disbursement Account (x1161),Arica,,713.3,1,2024,MSO
+   1310 - A/R - Intercompany,2024-01-01,Journal Entry,166,Transfer I/C Billing Account Balance,7800000,7800000,1300 - Accounts Receivable - Intercompany:1310 - A/R - Intercompany,,"7,800,000.00",,1,2024,MSO
+   1311 - I/C Cash Transfer,2024-01-01,Journal Entry,167,Transfer Balance for I/C Cash transfers,-6350000,-6350000,1300 - Accounts Receivable - Intercompany:1311 - I/C Cash Transfer,,,"6,350,000.00",1,2024,MSO
+   1311 - I/C Cash Transfer,2024-01-25,Deposit,,WT NEUROPATHY PAIN CLINIC,-500000,-6850000,1300 - Accounts Receivable - Intercompany:1311 - I/C Cash Transfer,,,"500,000.00",1,2024,MSO
+   1311 - I/C Cash Transfer,2024-02-26,Deposit,,WT NEUROPATHY PAIN CLINIC,-320000,-7170000,1300 - Accounts Receivable - Intercompany:1311 - I/C Cash Transfer,,,"320,000.00",2,2024,MSO
+   1311 - I/C Cash Transfer,2024-03-12,Deposit,,WT NEUROPATHY PAIN CLINIC,-375000,-7545000,1300 - Accounts Receivable - Intercompany:1311 - I/C Cash Transfer,,,"375,000.00",3,2024,MSO
+   1311 - I/C Cash Transfer,2024-04-04,Deposit,,WT NEUROPATHY PAIN CLINIC,-500000,-8045000,1300 - Accounts Receivable - Intercompany:1311 - I/C Cash Transfer,,,"500,000.00",4,2024,MSO
+   1420 - Prepaid expenses,2024-01-31,Journal Entry,151,Expense 2023 PPD Recruiting Fees,-7139,99195,1400 - Other Current Assets:1420 - Prepaid expenses,,,"7,139.00",1,2024,MSO
+   1420 - Prepaid expenses,2024-02-29,Journal Entry,163,Expense 2023 PPD Recruiting Fees,-7139,92056,1400 - Other Current Assets:1420 - Prepaid expenses,,,"7,139.00",2,2024,MSO
+   1420 - Prepaid expenses,2024-03-15,Bill,10481,Recruitment for Dr. Justin,11500,103556,1400 - Other Current Assets:1420 - Prepaid expenses,Texas,"11,500.00",,3,2024,MSO
+   1420 - Prepaid expenses,2024-03-31,Journal Entry,174,"Expense Recruiting Fees - March, 2024",-8098,95458,1400 - Other Current Assets:1420 - Prepaid expenses,,,"8,098.00",3,2024,MSO
+   1420 - Prepaid expenses,2024-04-30,Journal Entry,183,"Expense Recruiting Fees - April, 2024",-5592,89866,1400 - Other Current Assets:1420 - Prepaid expenses,,,"5,592.00",4,2024,MSO
+   1430 - Other Current Assets,2024-01-01,Journal Entry,166,Transfer I/C Billing Account Balance,-7800000,0,1400 - Other Current Assets:1430 - Other Current Assets,,,"7,800,000.00",1,2024,MSO
+   1520 - Leasehold Improvements,2024-01-01,Journal Entry,188R,Audit Entry # 103 - BS adjustment to account for services performed in 2023,-46070,452417,"1500 - Property, Plant & Equipment:1520 - Leasehold Improvements",,,"46,070.00",1,2024,MSO
+   1520 - Leasehold Improvements,2024-01-04,Bill,jAN042024,New Promise Tyler Construction,69449,521866,"1500 - Property, Plant & Equipment:1520 - Leasehold Improvements",SCI,"69,449.35",,1,2024,MSO
+   1520 - Leasehold Improvements,2024-01-26,Bill,1712,Construction,4782,526649,"1500 - Property, Plant & Equipment:1520 - Leasehold Improvements",JACS,"4,782.49",,1,2024,MSO
+   1520 - Leasehold Improvements,2024-01-26,Bill,2024-01-26,New Promise Tyler Construction,20416,547065,"1500 - Property, Plant & Equipment:1520 - Leasehold Improvements",SCI,"20,416.01",,1,2024,MSO
+   1520 - Leasehold Improvements,2024-01-26,Bill,1700,Construction,41288,588352,"1500 - Property, Plant & Equipment:1520 - Leasehold Improvements",JACS,"41,287.63",,1,2024,MSO
+   1530 - Equipment,2024-01-02,Bill,123925,Tyler Equipment,7293,186534,"1500 - Property, Plant & Equipment:1530 - Equipment",Venturenet,"7,292.77",,1,2024,MSO
+   1530 - Equipment,2024-01-03,Bill,2003,Synaptic Regenwave Equipment,8030,194564,"1500 - Property, Plant & Equipment:1530 - Equipment",Model,"8,030.00",,1,2024,MSO
