@@ -107,8 +107,11 @@ class DataValidationCrew():
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,    # Automatically created by the @task decorator
             process=Process.sequential,
-            memory=True,
-            cache=True,
+            long_term_memory=EnhanceLongTermMemory(
+            storage=LTMSQLiteStorage(
+                    db_path="/my_data_dir/my_crew1/long_term_memory_storage.db" #enter your path here
+                )
+            ),
             verbose=True,
             # process=Process.hierarchical, # Option to use a hierarchical process
         )
