@@ -67,7 +67,6 @@ class DataValidationCrew:
         return Task(
             config=self.tasks_config['comparison_task'],
             agent=self.comparison_agent(),
-            memory=True,
         )
 
     @task
