@@ -2,17 +2,14 @@ import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import CSVSearchTool
-from crewai.memory.contextual.contextual_memory import ContextualMemory  # General memory setup
-import openai  # Assuming OpenAI is used for GPT-4o mini model integration
+import openai  # Assuming OpenAI is used for GPT-4 mini model integration
 
 # Set up environment variables for OpenAI API key
-os.environ["OPENAI_API_KEY"] = "your key here"
+os.environ["OPENAI_API_KEY"] = "your_openai_api_key"
 
 # Set up CSVSearchTool with your CSV file
 csv_tool = CSVSearchTool(csv='./Data.csv')
 
-# General memory setup for the crew
-contextual_memory = ContextualMemory(stm={}, ltm={}, em={})  # Simplified memory
 
 @CrewBase
 class DataValidationCrew:
@@ -25,7 +22,7 @@ class DataValidationCrew:
         return Agent(
             config=self.agents_config['comparison_agent'],
             tools=[csv_tool],
-            memory=True,  # Enable memory for the comparison agent
+            memory=True,
             verbose=True,
         )
 
@@ -70,6 +67,7 @@ class DataValidationCrew:
         return Task(
             config=self.tasks_config['comparison_task'],
             agent=self.comparison_agent()
+            memory=True,
         )
 
     @task
@@ -109,5 +107,29 @@ class DataValidationCrew:
             tasks=self.tasks,
             process=Process.sequential,
             verbose=True,
-            # process=Process.hierarchical, # Option to use a hierarchical process
+             memory=True,
+    long_term_memory=EnhanceLongTermMemory(
+        storage=LTMSQLiteStorage(
+            db_path="/my_data_dir/my_crew1/long_term_memory_storage.db"
+        )
+    ),
+    short_term_memory=EnhanceShortTermMemory(
+        storage=CustomRAGStorage(
+            crew_name="my_crew",
+            storage_type="short_term",
+            data_dir="//my_data_dir",
+            model=embedder["model"],
+            dimension=embedder["dimension"],
+        ),
+    ),
+    entity_memory=EnhanceEntityMemory(
+        storage=CustomRAGStorage(
+            crew_name="my_crew",
+            storage_type="entities",
+            data_dir="//my_data_dir",
+            model=embedder["model"],
+            dimension=embedder["dimension"],
+        ),
+    ),
+            
         )
