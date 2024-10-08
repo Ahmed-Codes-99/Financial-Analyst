@@ -1,4 +1,4 @@
-import os
+,import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import CSVSearchTool
@@ -66,7 +66,7 @@ class DataValidationCrew:
     def comparison_task(self) -> Task:
         return Task(
             config=self.tasks_config['comparison_task'],
-            agent=self.comparison_agent()
+            agent=self.comparison_agent(),
             memory=True,
         )
 
